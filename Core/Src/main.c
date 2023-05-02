@@ -42,8 +42,8 @@
 uint8_t buffertx[10] = "Hello!\n\r";
 uint8_t value = 0.3;
 ADC_HandleTypeDef hadc1;
-
 UART_HandleTypeDef huart2;
+
 
 /* USER CODE BEGIN PV */
 
@@ -63,6 +63,7 @@ static void MX_ADC1_Init(void);
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 
 #endif
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -221,6 +222,7 @@ static void MX_ADC1_Init(void) {
 
 	/* USER CODE END ADC1_Init 2 */
 
+
 }
 
 /**
@@ -284,6 +286,7 @@ static void MX_GPIO_Init(void) {
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 	HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -301,6 +304,7 @@ void Error_Handler(void) {
 	while (1) {
 	}
 	/* USER CODE END Error_Handler_Debug */
+
 }
 
 #ifdef  USE_FULL_ASSERT

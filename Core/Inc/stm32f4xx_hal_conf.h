@@ -95,7 +95,11 @@
   *        (when HSE is used as system clock source, directly or through the PLL).
   */
 #if !defined  (HSE_VALUE)
+<<<<<<< HEAD
   #define HSE_VALUE    8000000U /*!< Value of the External oscillator in Hz */
+=======
+  #define HSE_VALUE    25000000U /*!< Value of the External oscillator in Hz */
+>>>>>>> d7a9cefb268d071cac4992f842100061358d8545
 #endif /* HSE_VALUE */
 
 #if !defined  (HSE_STARTUP_TIMEOUT)
@@ -147,7 +151,11 @@
   * @brief This is the HAL system configuration section
   */
 #define  VDD_VALUE		      3300U /*!< Value of VDD in mv */
+<<<<<<< HEAD
 #define  TICK_INT_PRIORITY            0U   /*!< tick interrupt priority */
+=======
+#define  TICK_INT_PRIORITY            15U   /*!< tick interrupt priority */
+>>>>>>> d7a9cefb268d071cac4992f842100061358d8545
 #define  USE_RTOS                     0U
 #define  PREFETCH_ENABLE              1U
 #define  INSTRUCTION_CACHE_ENABLE     1U
